@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/smack322/Wood-Heart-Construction/static/css/main.b44f0a3a.css",
+    "main.js": "/smack322/Wood-Heart-Construction/static/js/main.617e7b32.js",
+    "static/js/787.f725a536.chunk.js": "/smack322/Wood-Heart-Construction/static/js/787.f725a536.chunk.js",
+    "static/media/logo.svg": "/smack322/Wood-Heart-Construction/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/smack322/Wood-Heart-Construction/index.html",
+    "main.b44f0a3a.css.map": "/smack322/Wood-Heart-Construction/static/css/main.b44f0a3a.css.map",
+    "main.617e7b32.js.map": "/smack322/Wood-Heart-Construction/static/js/main.617e7b32.js.map",
+    "787.f725a536.chunk.js.map": "/smack322/Wood-Heart-Construction/static/js/787.f725a536.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b44f0a3a.css",
+    "static/js/main.617e7b32.js"
+  ]
+}
