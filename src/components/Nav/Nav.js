@@ -5,7 +5,7 @@ import './style.css'
 
 const Nav = () => (
   <header>
-    <h1 id="nav-title">Wood Heart Construction</h1>
+    <h1 id="nav-title">J & V Construction</h1>
     <nav>
       <ul>
         <li><a href="#">About Us</a></li>
