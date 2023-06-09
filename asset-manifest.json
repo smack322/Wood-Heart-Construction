@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/Wood-Heart-Construction/static/css/main.61d19b98.css",
-    "main.js": "/Wood-Heart-Construction/static/js/main.00321e2e.js",
+    "main.css": "/Wood-Heart-Construction/static/css/main.406d4448.css",
+    "main.js": "/Wood-Heart-Construction/static/js/main.03dd517f.js",
     "static/js/787.f725a536.chunk.js": "/Wood-Heart-Construction/static/js/787.f725a536.chunk.js",
-    "static/media/logo.svg": "/Wood-Heart-Construction/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/Vic.JPG": "/Wood-Heart-Construction/static/media/Vic.44018c9b96755944ec0d.JPG",
+    "static/media/J&P_Logo.png": "/Wood-Heart-Construction/static/media/J&P_Logo.9f5653a6c00c11119f7e.png",
     "index.html": "/Wood-Heart-Construction/index.html",
-    "main.61d19b98.css.map": "/Wood-Heart-Construction/static/css/main.61d19b98.css.map",
-    "main.00321e2e.js.map": "/Wood-Heart-Construction/static/js/main.00321e2e.js.map",
+    "main.406d4448.css.map": "/Wood-Heart-Construction/static/css/main.406d4448.css.map",
+    "main.03dd517f.js.map": "/Wood-Heart-Construction/static/js/main.03dd517f.js.map",
     "787.f725a536.chunk.js.map": "/Wood-Heart-Construction/static/js/787.f725a536.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.61d19b98.css",
-    "static/js/main.00321e2e.js"
+    "static/css/main.406d4448.css",
+    "static/js/main.03dd517f.js"
   ]
 }
