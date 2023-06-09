@@ -1,0 +1,41 @@
+.contact {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .contact__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .contact__info {
+    flex-basis: 300px;
+  }
+  
+  .contact__form {
+    flex-basis: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact__form input,
+  .contact__form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contact__form button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact__form button:hover {
+    background-color: #45a049;
+  }

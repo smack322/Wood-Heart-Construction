@@ -1,0 +1,20 @@
+.services {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .services__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .service {
+    flex-basis: 300px;
+  }
+  
+  .service img {
+    width: 100%;
+    height: auto;
+  }

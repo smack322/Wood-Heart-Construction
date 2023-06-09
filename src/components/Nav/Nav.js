@@ -1,24 +1,43 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useState } from 'react';
 import './style.css'
+import logo from '../../images/J&P_Logo.png';
 
 
-const Nav = () => (
-  <header>
-    <h1 id="nav-title">J & V Construction</h1>
-    <nav>
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+const Nav = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav className="navbar">
+      <div className="navbar__logo">
+        <a href="#home"><img id="logo" src={logo} alt="Logo" /></a>
+      </div>
+      <div className={`navbar__menu ${isOpen ? 'open' : ''}`}>
+        <ul className="navbar__list">
+          <li className="navbar__item">
+            <a href="#home">Home</a>
+          </li>
+          <li className="navbar__item">
+            <a href="#about">About</a>
+          </li>
+          <li className="navbar__item">
+            <a href="#projects">Projects</a>
+          </li>
+          <li className="navbar__item">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div className={`navbar__toggle ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <div className="navbar__icon"></div>
+        <div className="navbar__icon"></div>
+        <div className="navbar__icon"></div>
+      </div>
     </nav>
-  </header>
-);
-
-Nav.propTypes = {};
-
-Nav.defaultProps = {};
+  );
+};
 
 export default Nav;
