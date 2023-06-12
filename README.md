@@ -1,2 +1,2 @@
 # Wood-Heart-Construction
-Website for J & V construction company based out of Wilington, DE.
+Website for 3 Wood construction company based out of Wilington, DE.
