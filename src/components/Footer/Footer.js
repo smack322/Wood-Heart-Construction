@@ -1,23 +1,23 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee, faEnvelope,  } from '@fortawesome/free-solid-svg-icons';
-import { faTwitter, faInstagram,faInstagramSquare, faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faTwitter, faInstagramSquare, faFacebookF } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => (
   <footer className="footer">
     <div className="footer__content">
       <div className="footer__section">
         <h3>About</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>3 Wood Construction: Creating stunning woodwork with creativity and attention to detail. Custom cabinetry, outdoor structures, and more. Personalized service, exceeding expectations. Trust our expertise for warmth, character, and beauty.</p>
       </div>
       <div className="footer__section">
         <h3>Links</h3>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div className="footer__section">
@@ -31,13 +31,9 @@ const Footer = () => (
       </div>
     </div>
     <div className="footer__bottom">
-      <p>&copy; {new Date().getFullYear()} J & V Construction. All rights reserved.</p>
+      <p>3 Wood Construction. All rights reserved. &copy; {new Date().getFullYear()}</p>
     </div>
   </footer>
 );
-
-Footer.propTypes = {};
-
-Footer.defaultProps = {};
 
 export default Footer;
