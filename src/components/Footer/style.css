@@ -9,7 +9,8 @@
   }
   
   .footer__section {
-    margin-right: 40px;
+    /* margin-right: 40px; */
+    flex-basis: 33.3%;
   }
   
   .footer h3 {

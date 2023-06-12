@@ -18,10 +18,10 @@ const Nav = () => {
       <div className={`navbar__menu ${isOpen ? 'open' : ''}`}>
         <ul className="navbar__list">
           <li className="navbar__item">
-            <a href="#home">Home</a>
+            <a href="#about">About</a>
           </li>
           <li className="navbar__item">
-            <a href="#about">About</a>
+            <a href="#services">Services</a>
           </li>
           <li className="navbar__item">
             <a href="#projects">Projects</a>

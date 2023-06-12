@@ -12,9 +12,16 @@
   
   .service {
     flex-basis: 300px;
+    
   }
   
   .service img {
     width: 100%;
     height: auto;
+  }
+
+  @media (min-width: 992px) {
+    .service {
+      flex-basis: calc(33.33% - 20px);
+    }
   }
