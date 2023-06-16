@@ -1,17 +1,30 @@
 {
   "files": {
-    "main.css": "/Wood-Heart-Construction/static/css/main.406d4448.css",
-    "main.js": "/Wood-Heart-Construction/static/js/main.03dd517f.js",
+    "main.css": "/Wood-Heart-Construction/static/css/main.b5a4f51d.css",
+    "main.js": "/Wood-Heart-Construction/static/js/main.bb8b5b52.js",
     "static/js/787.f725a536.chunk.js": "/Wood-Heart-Construction/static/js/787.f725a536.chunk.js",
     "static/media/Vic.JPG": "/Wood-Heart-Construction/static/media/Vic.44018c9b96755944ec0d.JPG",
+    "static/media/after2.jpg": "/Wood-Heart-Construction/static/media/after2.73ba0c5b6412502d8e23.jpg",
+    "static/media/after1.jpg": "/Wood-Heart-Construction/static/media/after1.926f4021fcad7907f8f4.jpg",
+    "static/media/before.jpg": "/Wood-Heart-Construction/static/media/before.379569b3482a9dfae88e.jpg",
+    "static/media/after4.jpg": "/Wood-Heart-Construction/static/media/after4.fb3a0bd7fc2858beb224.jpg",
+    "static/media/after3.jpg": "/Wood-Heart-Construction/static/media/after3.58b446e95136d5a424b8.jpg",
+    "static/media/custom.jpg": "/Wood-Heart-Construction/static/media/custom.8f58bf2e3415ee033bec.jpg",
+    "static/media/after.jpg": "/Wood-Heart-Construction/static/media/after.5563ba447318d5615a73.jpg",
+    "static/media/before1.jpg": "/Wood-Heart-Construction/static/media/before1.7d1952714b44d2aaadee.jpg",
+    "static/media/after2_job1.jpg": "/Wood-Heart-Construction/static/media/after2_job1.c3d7cad38728e07ceffb.jpg",
+    "static/media/before2.jpg": "/Wood-Heart-Construction/static/media/before2.f2ca3d127bf2af0121e2.jpg",
+    "static/media/during2.jpg": "/Wood-Heart-Construction/static/media/during2.58b267e332d8e788f7c7.jpg",
+    "static/media/during1.jpg": "/Wood-Heart-Construction/static/media/during1.fde6988b307aed7cc6d3.jpg",
+    "static/media/during.jpg": "/Wood-Heart-Construction/static/media/during.c1babd5d1f624014e066.jpg",
     "static/media/J&P_Logo.png": "/Wood-Heart-Construction/static/media/J&P_Logo.9f5653a6c00c11119f7e.png",
     "index.html": "/Wood-Heart-Construction/index.html",
-    "main.406d4448.css.map": "/Wood-Heart-Construction/static/css/main.406d4448.css.map",
-    "main.03dd517f.js.map": "/Wood-Heart-Construction/static/js/main.03dd517f.js.map",
+    "main.b5a4f51d.css.map": "/Wood-Heart-Construction/static/css/main.b5a4f51d.css.map",
+    "main.bb8b5b52.js.map": "/Wood-Heart-Construction/static/js/main.bb8b5b52.js.map",
     "787.f725a536.chunk.js.map": "/Wood-Heart-Construction/static/js/787.f725a536.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.406d4448.css",
-    "static/js/main.03dd517f.js"
+    "static/css/main.b5a4f51d.css",
+    "static/js/main.bb8b5b52.js"
   ]
 }
