@@ -1,6 +1,6 @@
 #logo {
-    max-width: 200px;
-    max-height: 50px;
+    max-width: 250px;
+    max-height: 100px;
 }
 .navbar {
     background-color: #f2f2f2;
@@ -35,7 +35,13 @@
   
   .navbar__item a {
     text-decoration: none;
-    color: #333;
+    color: #8B4513;
+    transition: color 0.3s ease;
+  }
+
+  .navbar__item a:hover {
+    color: #6A994E; /* Update with your desired hover color */
+    background-color: #707070;
   }
   
   .navbar__toggle {
@@ -72,10 +78,10 @@
       margin-bottom: 10px;
     }
   
-    .navbar__item a {
+    /* .navbar__item a {
       text-decoration: none;
       color: #333;
-    }
+    } */
   
     .navbar__toggle.open .navbar__icon:nth-child(1) {
       transform: rotate(45deg) translate(5px, 5px);
