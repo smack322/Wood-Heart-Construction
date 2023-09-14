@@ -152,8 +152,6 @@ const Projects = () => {
             <div className="project" key={index}>
               <h3>{project.title}</h3>
               <img src={project.image} alt={project.title} />
-              <div className="project__overlay">
-              </div>
               {/* <p>{project.status}</p> */}
               <p>{project.description}</p>
             </div>
@@ -162,8 +160,6 @@ const Projects = () => {
             <div className="project" key={index}>
               <h3>{project.title}</h3>
               <img src={project.image} alt={project.title} />
-              <div className="project__overlay">   
-              </div>
               {/* <p>{project.status}</p> */}
               <p>{project.description}</p>
             </div>
@@ -176,8 +172,6 @@ const Projects = () => {
             <div className="project" key={index}>
               <h3>{project.title}</h3>
               <img src={project.image} alt={project.title} />
-              <div className="project__overlay">   
-              </div>
               {/* <p>{project.status}</p> */}
               <p>{project.description}</p>
             </div>
@@ -186,8 +180,6 @@ const Projects = () => {
             <div className="project" key={index}>
               <h3>{project.title}</h3>
               <img src={project.image} alt={project.title} />
-              <div className="project__overlay">
-              </div>
               {/* <p>{project.status}</p> */}
               <p>{project.description}</p>
             </div>

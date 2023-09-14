@@ -28,11 +28,11 @@
   width: 100%;
   height: auto;
   transition: transform 0.3s;
-}
+} 
 
-.project:hover img {
+/* .project:hover img {
   transform: scale(1.1);
-}
+} */
 
 .project__overlay {
   position: absolute;
@@ -68,5 +68,13 @@
 @media screen and (min-width: 1200px) {
   .project {
     flex-basis: calc(33.333% - 20px);
+  }
+}
+
+/* CSS for smaller screens (e.g., screens 768px wide or smaller) */
+@media screen and (max-width: 768px) {
+  ._-cAh3,
+  ._19gvi {
+    display: none; /* Hide elements with these classes on small screens */
   }
 }

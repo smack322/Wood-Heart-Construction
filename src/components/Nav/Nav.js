@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './style.css'
-import logo from '../../images/3Wood_Logo.png';
+import logo from '../../images/3_wood_logo.png';
 
 
 const Nav = () => {
@@ -13,7 +13,10 @@ const Nav = () => {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <a href="#home"><img id="logo" src={logo} alt="Logo" /></a>
+        <a href="#home"><img id="logo" src={logo} alt="Logo" /></a> 
+      </div>
+      <div className="navbar__slogan">
+        We make it happen
       </div>
       <div className={`navbar__menu ${isOpen ? 'open' : ''}`}>
         <ul className="navbar__list">

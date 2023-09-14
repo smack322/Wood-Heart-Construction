@@ -15,6 +15,11 @@ body {
   background-color: #F4E1C6; /* Light Brown */
 }
 
+#plywood {
+  width: 400px;
+  height: 300px;
+}
+
 .about-me {
     text-align: center;
     padding: 20px;
@@ -48,3 +53,31 @@ body {
     padding: 10px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
   }
+
+  .image-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .image-container img {
+    width: 30%;
+    height: auto;
+  }
+  
+  /* For small screens */
+  @media (max-width: 480px) {
+    .image-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .image-container img {
+      width: 100%;
+      margin-bottom: 20px; /* Add space between stacked images */
+    }
+  }
+  
+  
+  
+  
+  
+  

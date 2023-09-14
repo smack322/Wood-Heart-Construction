@@ -26,3 +26,7 @@
     margin-top: 20px;
     text-align: center;
   }
+  /* Add vertical spacing between list items */
+.social-item {
+  margin-bottom: 10px; /* Adjust the spacing as needed */
+}

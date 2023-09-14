@@ -1,5 +1,6 @@
 import React from 'react';
 import './contact.css';
+import mapImageSrc from '../../images/wilmington.png'
 
 const Contact = () => {
   return (
@@ -14,12 +15,9 @@ const Contact = () => {
           <h3>Email</h3>
           <p>treewoodconstruccion@yahoo.com</p>
         </div>
-        <form className="contact__form">
-          <input type="text" placeholder="Your Name" />
-          <input type="email" placeholder="Your Email" />
-          <textarea placeholder="Your Message"></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+        <div className="contact__map">
+          <img src={mapImageSrc} alt="Google Map of Wilmington, DE" />
+        </div>
       </div>
     </div>
   );
