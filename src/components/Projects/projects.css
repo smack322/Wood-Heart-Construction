@@ -73,8 +73,7 @@
 
 /* CSS for smaller screens (e.g., screens 768px wide or smaller) */
 @media screen and (max-width: 768px) {
-  ._-cAh3,
-  ._19gvi {
+  ._-LJ2W, ._2c50p{
     display: none; /* Hide elements with these classes on small screens */
   }
 }
