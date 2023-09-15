@@ -1,0 +1,9 @@
+[build]
+  # Set the base directory for your build
+  base = "build"  # Adjust this path to match your build output directory
+
+[[redirects]]
+  # Redirects configuration
+  from = "/*"
+  to = "/index.html"
+  status = 200
