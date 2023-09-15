@@ -13,27 +13,7 @@ const Projects = () => {
       status: 'before',
       image: require('../../images/kitchen1/before.jpg'),
       description: 'The before photo showcases a kitchen with a ton of potential. The worn flooring and lack of trim around the window fail to give justice to the kitchens potential '
-    },
-    {
-      title: 'Kitchen Renovation',
-      service: 'Interior Work',
-      status: 'during',
-      image: require('../../images/kitchen1/during.jpg'),
-      description: 'The photo highlights the significant enhancements made to the kitchen, including a sleek set of white cabinets and tastefully appointed window trim'
-    },
-    {
-      title: 'Kitchen Renovation',
-      service: 'Interior Work',
-      status: 'during',
-      image: require('../../images/kitchen1/during2.jpg'),
-      description: 'The above photo effectively illustrates the ongoing progress in the kitchen, now equipped with essential appliances including a dishwasher, microwave, oven, and range.'
-    },
-    // {
-    //   title: 'Kitchen Renovation',
-    //   service: 'Interior Work',
-    //   status: 'during',
-    //   image: require('../../images/kitchen1/after1.jpg'),
-    // },
+    },   
     {
       title: 'Kitchen Renovation',
       service: 'Interior Work',
@@ -41,7 +21,26 @@ const Projects = () => {
       image: require('../../images/kitchen1/after2.jpg'),
       description: 'The final photo unveils the completed project, boasting natural-looking wood floors, a state-of-the-art stainless steel refrigerator, and a sophisticated black countertop.'
     }
+
   ];
+
+  // const kitchen1_2 = [
+  //   {
+  //     title: 'Kitchen Renovation',
+  //     service: 'Interior Work',
+  //     status: 'during',
+  //     image: require('../../images/kitchen1/during2.jpg'),
+  //     description: 'The above photo effectively illustrates the ongoing progress in the kitchen, now equipped with essential appliances including a dishwasher, microwave, oven, and range.'
+  //   },
+  //   {
+  //     title: 'Kitchen Renovation',
+  //     service: 'Interior Work',
+  //     status: 'during',
+  //     image: require('../../images/kitchen1/after2.jpg'),
+  //     description: 'The final photo unveils the completed project, boasting natural-looking wood floors, a state-of-the-art stainless steel refrigerator, and a sophisticated black countertop.'
+  //   }
+
+  //]
 
   const kitchen2 = [
     {
@@ -51,25 +50,19 @@ const Projects = () => {
       image: require('../../images/kitchen2/before1.jpg'),
       description: 'The initial photograph unveils the kitchen in its original, unrefined state. Lacking a ceiling and featuring worn hardwood floors, the room is further compromised by a noticeable absence of electrical outlets.'
     },
-    {
-      title: 'Kitchen Transformation',
-      service: 'Interior Work',
-      status: 'before',
-      image: require('../../images/kitchen2/before2.jpg'),
-      description: 'Drywall has been installed, electrical outlets have been strategically added, and a new window now enhances the room\'s natural lighting potential.'
-    },
-    {
-      title: 'Kitchen Transformation',
-      service: 'Interior Work',
-      status: 'during',
-      image: require('../../images/kitchen2/during1.jpg'),
-      description: 'The third image offers a glimpse into the ongoing renovation, highlighting the drywall that\'s well underway, spackling that has commenced, and ceiling lights that are beginning to be installed.'
-    },
     // {
-    //   title: 'Kitchen Remodel',
+    //   title: 'Kitchen Transformation',
+    //   service: 'Interior Work',
+    //   status: 'before',
+    //   image: require('../../images/kitchen2/before2.jpg'),
+    //   description: 'Drywall has been installed, electrical outlets have been strategically added, and a new window now enhances the room\'s natural lighting potential.'
+    // },
+    // {
+    //   title: 'Kitchen Transformation',
     //   service: 'Interior Work',
     //   status: 'during',
-    //   image: require('../../images/kitchen2/during2.jpg'),
+    //   image: require('../../images/kitchen2/during1.jpg'),
+    //   description: 'The third image offers a glimpse into the ongoing renovation, highlighting the drywall that\'s well underway, spackling that has commenced, and ceiling lights that are beginning to be installed.'
     // },
     {
       title: 'Kitchen Transformation',
@@ -95,6 +88,9 @@ const Projects = () => {
       image: require('../../images/deck1/after1.jpg'),
       description: 'The subsequent photograph displays the completed deck as viewed from ground level. Boasting a sleek gray and white finish, the deck is constructed from composite materials to ensure long-lasting durability.'
     },
+    
+  ];
+  const deck1_2 = [
     {
       title: 'Deck Renovation',
       service: 'Interior Work',
@@ -107,15 +103,10 @@ const Projects = () => {
       service: 'Interior Work',
       status: 'after',
       image: require('../../images/deck1/after3.jpg'),
-      description: 'The final photograph provides a comprehensive view from ground level, capturing both the stairs and the full deck as they extend from the house. This cohesive perspective really illustrates the unity and functionality of the outdoor space.'
-    },
-    // {
-    //   title: 'Kitchen Remodel',
-    //   service: 'Interior Work',
-    //   status: 'after',
-    //   image: require('../../images/deck1/after4.jpg'),
-    // }
-  ];
+      description: 'The final photograph provides a comprehensive view from ground level, capturing both the stairs and the full deck as they extend from the house.'
+    }
+
+  ]
 
   const deck2 = [
     {
@@ -130,17 +121,9 @@ const Projects = () => {
       service: 'Exterior Work',
       status: 'after',
       image: require('../../images/deck2/after.jpg'),
-      description: 'The final photograph beautifully showcases the deck\'s transformation, featuring gray composite wood for durability and weather-resistant railings that complement the gray tones perfectly.'
+      description: 'The final photograph beautifully showcases the deck\'s transformation, featuring gray composite wood for durability.'
     }
   ];
-
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  // };
 
   return (
     <div id="projects" className="projects">
@@ -151,17 +134,19 @@ const Projects = () => {
           {kitchen1.map((project, index) => (
             <div className="project" key={index}>
               <h3>{project.title}</h3>
-              <img src={project.image} alt={project.title} />
+              <p className="project-desc">{project.description}</p>
+              <img className="project-style" src={project.image} alt={project.title} />
               {/* <p>{project.status}</p> */}
-              <p>{project.description}</p>
+              
             </div>
           ))}
           {kitchen2.map((project, index) => (
             <div className="project" key={index}>
               <h3>{project.title}</h3>
-              <img src={project.image} alt={project.title} />
+              <p className="project-desc">{project.description}</p>
+              <img className="project-style" src={project.image} alt={project.title} />
               {/* <p>{project.status}</p> */}
-              <p>{project.description}</p>
+              
             </div>
           ))}
 
@@ -171,17 +156,28 @@ const Projects = () => {
           {deck1.map((project, index) => (
             <div className="project" key={index}>
               <h3>{project.title}</h3>
-              <img src={project.image} alt={project.title} />
+              <p className="project-desc">{project.description}</p>
+              <img className="project-style" src={project.image} alt={project.title} />
               {/* <p>{project.status}</p> */}
-              <p>{project.description}</p>
+              
+            </div>
+          ))}
+              {deck1_2.map((project, index) => (
+            <div className="project" key={index}>
+              <h3>{project.title}</h3>
+              <p className="project-desc">{project.description}</p>
+              <img className="project-style" src={project.image} alt={project.title} />
+              {/* <p>{project.status}</p> */}
+              
             </div>
           ))}
             {deck2.map((project, index) => (
             <div className="project" key={index}>
               <h3>{project.title}</h3>
-              <img src={project.image} alt={project.title} />
+              <p className="project-desc">{project.description}</p>
+              <img className="project-style" src={project.image} alt={project.title} />
               {/* <p>{project.status}</p> */}
-              <p>{project.description}</p>
+              
             </div>
           ))}
         </GalleryCarousel>
