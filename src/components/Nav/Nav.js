@@ -15,22 +15,19 @@ const Nav = () => {
       <div className="navbar__logo">
         <a href="#home"><img id="logo" src={logo} alt="Logo" /></a> 
       </div>
-      <div className="navbar__slogan">
-        We make it happen
-      </div>
       <div className={`navbar__menu ${isOpen ? 'open' : ''}`}>
         <ul className="navbar__list">
           <li className="navbar__item">
-            <a href="#about">About</a>
+            <a href="#about">ABOUT</a>
           </li>
           <li className="navbar__item">
-            <a href="#services">Services</a>
+            <a href="#services">SERVICES</a>
           </li>
           <li className="navbar__item">
-            <a href="#projects">Projects</a>
+            <a href="#projects">PROJECTS</a>
           </li>
           <li className="navbar__item">
-            <a href="#contact">Contact</a>
+            <a href="#contact">CONTACT</a>
           </li>
         </ul>
       </div>

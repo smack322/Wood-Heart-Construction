@@ -1,6 +1,6 @@
 import React from 'react';
 import './projects.css';
-import GalleryCarousel from 'react-gallery-carousel';
+// import GalleryCarousel from 'react-gallery-carousel';
 import 'react-gallery-carousel/dist/index.css';
 
 
@@ -24,23 +24,63 @@ const Projects = () => {
 
   ];
 
-  // const kitchen1_2 = [
-  //   {
-  //     title: 'Kitchen Renovation',
-  //     service: 'Interior Work',
-  //     status: 'during',
-  //     image: require('../../images/kitchen1/during2.jpg'),
-  //     description: 'The above photo effectively illustrates the ongoing progress in the kitchen, now equipped with essential appliances including a dishwasher, microwave, oven, and range.'
-  //   },
-  //   {
-  //     title: 'Kitchen Renovation',
-  //     service: 'Interior Work',
-  //     status: 'during',
-  //     image: require('../../images/kitchen1/after2.jpg'),
-  //     description: 'The final photo unveils the completed project, boasting natural-looking wood floors, a state-of-the-art stainless steel refrigerator, and a sophisticated black countertop.'
-  //   }
+  const basement = [
+    {
+      title: 'Basement Renovation',
+      service: 'Interior Work',
+      status: 'during',
+      image: require('../../images/basement_3.jpg')
+    },
+    {
+      title: 'Basement Renovation',
+      service: 'Interior Work',
+      status: 'during',
+      image: require('../../images/basement_1.jpg')
+    },
+    {
+      title: 'Basement Renovation',
+      service: 'Interior Work',
+      status: 'during',
+      image: require('../../images/basement_2.jpg')
+    },
+    {
+      title: 'Basement Renovation',
+      service: 'Interior Work',
+      status: 'during',
+      image: require('../../images/basement_4.jpg')
+    },
+    {
+      title: 'Basement Renovation',
+      service: 'Interior Work',
+      status: 'during',
+      image: require('../../images/basement_6.jpg')
+    },
+    {
+      title: 'Basement Renovation',
+      service: 'Interior Work',
+      status: 'during',
+      image: require('../../images/basement_bar1.jpg')
+    },
+    {
+      title: 'Basement Renovation',
+      service: 'Interior Work',
+      status: 'during',
+      image: require('../../images/basement_movie1.jpg')
+    },
+    {
+      title: 'Basement Renovation',
+      service: 'Interior Work',
+      status: 'during',
+      image: require('../../images/basement_movie2.jpg')
+    },
+    {
+      title: 'Basement Renovation',
+      service: 'Interior Work',
+      status: 'during',
+      image: require('../../images/basement_movie4.jpg')
+    }
 
-  //]
+  ]
 
   const kitchen2 = [
     {
@@ -125,62 +165,79 @@ const Projects = () => {
     }
   ];
 
-  return (
-    <div id="projects" className="projects">
-      <h2>Our Projects</h2>
-      <div className="projects__container">
-        <h3>Interior Work</h3>
-        <GalleryCarousel autoplay={true}>
-          {kitchen1.map((project, index) => (
-            <div className="project" key={index}>
-              <h3>{project.title}</h3>
-              <p className="project-desc">{project.description}</p>
-              <img className="project-style" src={project.image} alt={project.title} />
-              {/* <p>{project.status}</p> */}
-              
-            </div>
-          ))}
-          {kitchen2.map((project, index) => (
-            <div className="project" key={index}>
-              <h3>{project.title}</h3>
-              <p className="project-desc">{project.description}</p>
-              <img className="project-style" src={project.image} alt={project.title} />
-              {/* <p>{project.status}</p> */}
-              
-            </div>
-          ))}
+  const shed = [
+    {
+      title: 'Shed Build',
+      service: 'Exterior Work',
+      status: 'before',
+      image: require('../../images/shed_6.jpg')
+    },
+    {
+      title: 'Shed Build',
+      service: 'Exterior Work',
+      status: 'before',
+      image: require('../../images/shed_9.jpg')
+    },
+    {
+      title: 'Shed Build',
+      service: 'Exterior Work',
+      status: 'before',
+      image: require('../../images/shed_7.jpg')
+    },
+    {
+      title: 'Shed Build',
+      service: 'Exterior Work',
+      status: 'before',
+      image: require('../../images/shed_8.jpg')
+    },
+    {
+      title: 'Shed Build',
+      service: 'Exterior Work',
+      status: 'before',
+      image: require('../../images/shed_1.jpg')
+    },
+    {
+      title: 'Shed Build',
+      service: 'Exterior Work',
+      status: 'before',
+      image: require('../../images/shed_4.jpg')
+    },
+    {
+      title: 'Shed Build',
+      service: 'Exterior Work',
+      status: 'before',
+      image: require('../../images/shed_2.jpg')
+    },
+  ];
 
-        </GalleryCarousel>
-        <h3>Exterior Work</h3>
-        <GalleryCarousel autoplay={true}>
-          {deck1.map((project, index) => (
-            <div className="project" key={index}>
-              <h3>{project.title}</h3>
-              <p className="project-desc">{project.description}</p>
-              <img className="project-style" src={project.image} alt={project.title} />
-              {/* <p>{project.status}</p> */}
-              
-            </div>
-          ))}
-              {deck1_2.map((project, index) => (
-            <div className="project" key={index}>
-              <h3>{project.title}</h3>
-              <p className="project-desc">{project.description}</p>
-              <img className="project-style" src={project.image} alt={project.title} />
-              {/* <p>{project.status}</p> */}
-              
-            </div>
-          ))}
-            {deck2.map((project, index) => (
-            <div className="project" key={index}>
-              <h3>{project.title}</h3>
-              <p className="project-desc">{project.description}</p>
-              <img className="project-style" src={project.image} alt={project.title} />
-              {/* <p>{project.status}</p> */}
-              
-            </div>
-          ))}
-        </GalleryCarousel>
+  const renderProject = (project, index) => (
+    <div className="project" key={index}>
+      {/* <h3>{project.title}</h3> */}
+      {/* <p className="project-desc">{project.status}</p> */}
+      <img className="project-style" src={project.image} alt={project.title} />
+    </div>
+  );
+
+  return (
+<div id="projects" className="projects">
+      <h2>OUR PROJECTS</h2>
+      <div className="projects__container">
+        <h3>INTERIOR WORK</h3>
+        <div className="project-gallery">
+          {basement.map(renderProject)}
+          {kitchen1.map(renderProject)}
+          {kitchen2.map(renderProject)}
+          {/* Add more projects as needed */}
+        </div>
+
+        <h3>EXTERIOR WORK</h3>
+        <div className="project-gallery">
+          {shed.map(renderProject)}
+          {deck1.map(renderProject)}
+          {deck1_2.map(renderProject)}
+          {deck2.map(renderProject)}
+          {/* Add more projects as needed */}
+        </div>
       </div>
     </div>
   );

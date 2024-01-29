@@ -32,6 +32,19 @@
   margin-bottom: 10px; /* Adjust the spacing as needed */
 }
 
+.social-item a:hover {
+  color: #6A994E;
+}
+
+a {
+  color: #8B4513;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #8B4513;
+}
+
 #footer-about {
   background-color: #F0F0F0;
   border: 2px solid #A9A9A9;

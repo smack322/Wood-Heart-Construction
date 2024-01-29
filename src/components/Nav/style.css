@@ -62,12 +62,12 @@
 
 .navbar__item a:hover {
   color: #D2B48C; /* Lighter Pine color */
-  background-color: #DEB887; /* Lighter Cedar color */
+
 }
 
   .navbar__item a:hover {
     color: #6A994E; /* Update with your desired hover color */
-    background-color: #707070;
+
   }
   
   .navbar__toggle {
@@ -93,22 +93,21 @@
   
     .navbar__menu.open {
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      max-height: 500px;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items */
+      max-height: 200px; /* Adjust as needed */
       transition: max-height 0.3s ease-out;
+      padding-top: 20px; /* Add some space at the top */
     }
   
     .navbar__item {
       margin-right: 0;
-      margin-bottom: 10px;
+      margin-bottom: 10px; /* Adjust vertical spacing */
+      width: 100%; /* Stretch items to full width */
+      text-align: center; /* Center text */
     }
   
-    /* .navbar__item a {
-      text-decoration: none;
-      color: #333;
-    } */
-  
+    /* Transformations for hamburger icon */
     .navbar__toggle.open .navbar__icon:nth-child(1) {
       transform: rotate(45deg) translate(5px, 5px);
     }
@@ -121,6 +120,7 @@
       transform: rotate(-45deg) translate(5px, -5px);
     }
   }
+  
 
   /* Tablets - Medium Screen Size */
 
