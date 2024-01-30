@@ -110,10 +110,6 @@
   gap: 20px; /* Adjust the spacing between items */
 }
 
-.project {
-  /* Your existing styles for project */
-}
-
 .project img {
   width: 100%; /* Ensure images take full width of their container */
   height: auto; /* Maintain aspect ratio */

@@ -11,10 +11,10 @@ const Footer = () => (
       <div className="footer__section">
       <h3>SOCIAL</h3>
         <ul>
-          <li className="social-item"><FontAwesomeIcon className="fa-2x" icon={faFacebookF} /> <a href="https://www.facebook.com/profile.php?id=100093234410520">FACEBOOK</a></li>
+          <li className="social-item"><FontAwesomeIcon className="fa-2x" icon={faFacebookF} /> <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100093234410520">FACEBOOK</a></li>
           {/* <li className="social-item"><FontAwesomeIcon className="fa-2x" icon={faTwitter} /> Twitter</li> */}
-          <li className="social-item"><FontAwesomeIcon className="fa-2x" icon={faInstagramSquare} /> <a href="https://www.instagram.com/treewoodconstrution/">INSTAGRAM</a></li>
-          <li className="social-item"><FontAwesomeIcon className="fa-2x" icon={faEnvelope} /> <a href={`mailto:${emailAddress}`}>EMAIL</a></li>
+          <li className="social-item"><FontAwesomeIcon className="fa-2x" icon={faInstagramSquare} /> <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/tree_wood_construction_company">INSTAGRAM</a></li>
+          <li className="social-item"><FontAwesomeIcon className="fa-2x" icon={faEnvelope} /> <a target="_blank" rel="noopener noreferrer" href={`mailto:${emailAddress}`}>EMAIL</a></li>
         </ul>
         
       </div>

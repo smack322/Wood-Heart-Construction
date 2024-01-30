@@ -25,7 +25,7 @@ const AboutMe = () => {
                     id="basement"
                     className="aboutMe-pics"
                     src={basement}
-                    alt="Plywood board"
+                    alt="Finished basement"
       >
       </img>
         <img

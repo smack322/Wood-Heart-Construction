@@ -18,8 +18,9 @@ exports.handler = async (event, context) => {
         `
         const response = await axios.post('https://api.postmarkapp.com/email', {
             From: 'quotes@3woodconstruction.com',
-            To: to,
+            To: 'sdm5299@psu.edu',
             Subject: `New Project Inquiry From ${name}`,
+            Cc: '3woodconstruction@gmail.com',
             TextBody: formattedMessage
         }, {
             headers: {
