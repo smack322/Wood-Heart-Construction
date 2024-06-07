@@ -62,7 +62,7 @@ const Contact = () => {
               Let's collaborate on your next construction endeavor. Contact us today for a free consultation and a detailed quote.</p>
           </div>
           <h3>PHONE</h3>
-          <p className="contact-details"><strong>Victor Luna:</strong> (302) 548-7069</p>
+          <p className="contact-details"><strong>Victor Luna:</strong> (302) 530-1346</p>
           <h3>EMAIL</h3>
           <p className="contact-details"><a href={`mailto:3woodconstruction@gmail.com`}>3woodconstruction@gmail.com</a></p>
 
