@@ -8,16 +8,18 @@ import Footer from './components/Footer/Footer'
 import Services from './components/Services/Services'
 import Projects from './components/Projects/Projects'
 import Contact from './components/Contact/Contact'
+import Construction from './components/Construction/Construction'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Nav />
+    <Construction />
+    {/* <Nav />
     <AboutMe />
     <Services />
     <Projects />
     <Contact />
-    <Footer />
+    <Footer /> */}
   </React.StrictMode>
 );
 
