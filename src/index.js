@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import AboutMe from './components/AboutMe/AboutMe';
+// import AboutMe from './components/AboutMe/AboutMe';
 import reportWebVitals from './reportWebVitals';
-import Nav from './components/Nav/Nav'
-import Footer from './components/Footer/Footer'
-import Services from './components/Services/Services'
-import Projects from './components/Projects/Projects'
-import Contact from './components/Contact/Contact'
+// import Nav from './components/Nav/Nav'
+// import Footer from './components/Footer/Footer'
+// import Services from './components/Services/Services'
+// import Projects from './components/Projects/Projects'
+// import Contact from './components/Contact/Contact'
 import Construction from './components/Construction/Construction'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

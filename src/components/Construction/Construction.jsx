@@ -1,5 +1,3 @@
-import { useState, useEffect, useRef } from "react";
-
 const GearSVG = () => (
   <svg
     width="120"
@@ -37,78 +35,7 @@ const GearSVG = () => (
   </svg>
 );
 
-const LAUNCH_DATE = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000);
-
-function useCountdown(target) {
-  const [timeLeft, setTimeLeft] = useState({});
-  useEffect(() => {
-    const calc = () => {
-      const diff = target - Date.now();
-      if (diff <= 0) return setTimeLeft({ d: 0, h: 0, m: 0, s: 0 });
-      setTimeLeft({
-        d: Math.floor(diff / 86400000),
-        h: Math.floor((diff % 86400000) / 3600000),
-        m: Math.floor((diff % 3600000) / 60000),
-        s: Math.floor((diff % 60000) / 1000),
-      });
-    };
-    calc();
-    const id = setInterval(calc, 1000);
-    return () => clearInterval(id);
-  }, [target]);
-  return timeLeft;
-}
-
-function CountdownUnit({ value, label }) {
-  return (
-    <div style={{ textAlign: "center", minWidth: 56 }}>
-      <div
-        style={{
-          fontSize: "1.75rem",
-          fontWeight: 300,
-          letterSpacing: "-0.03em",
-          color: "#111827",
-          fontFamily: "Georgia, serif",
-          lineHeight: 1,
-          marginBottom: 4,
-        }}
-      >
-        {String(value ?? 0).padStart(2, "0")}
-      </div>
-      <div style={{ fontSize: 10, letterSpacing: "0.15em", textTransform: "uppercase", color: "#9ca3af" }}>
-        {label}
-      </div>
-    </div>
-  );
-}
-
-function Divider() {
-  return <div style={{ width: 1, height: 36, background: "#e5e7eb", alignSelf: "center" }} />;
-}
-
 export default function UnderConstruction() {
-  const [email, setEmail] = useState("");
-  const [status, setStatus] = useState("idle"); // idle | invalid | submitted
-  const [progressWidth, setProgressWidth] = useState(0);
-  const progress = 68;
-  const countdown = useCountdown(LAUNCH_DATE);
-  const inputRef = useRef(null);
-
-  useEffect(() => {
-    const t = setTimeout(() => setProgressWidth(progress), 400);
-    return () => clearTimeout(t);
-  }, []);
-
-  const handleSubmit = () => {
-    if (!email.trim() || !email.includes("@")) {
-      setStatus("invalid");
-      inputRef.current?.focus();
-      setTimeout(() => setStatus("idle"), 2000);
-      return;
-    }
-    setStatus("submitted");
-  };
-
   return (
     <div
       style={{
@@ -123,12 +50,10 @@ export default function UnderConstruction() {
     >
       <div style={{ maxWidth: 520, width: "100%", textAlign: "center" }}>
 
-        {/* Gear */}
         <div style={{ marginBottom: "1.75rem", display: "inline-block" }}>
           <GearSVG />
         </div>
 
-        {/* Eyebrow */}
         <p
           style={{
             fontSize: 11,
@@ -142,7 +67,6 @@ export default function UnderConstruction() {
           Website Under Construction
         </p>
 
-        {/* Headline */}
         <h1
           style={{
             fontSize: "2.5rem",
@@ -156,7 +80,6 @@ export default function UnderConstruction() {
           Something great<br />is on its way.
         </h1>
 
-        {/* Subtext */}
         <p
           style={{
             fontSize: "1rem",
@@ -167,12 +90,9 @@ export default function UnderConstruction() {
           }}
         >
           Check back soon.
-
         </p>
-
 
       </div>
     </div>
-
   );
 }
