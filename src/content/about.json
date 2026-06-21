@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "block1": {
+      "label": "WHO WE ARE",
+      "heading": "Family-Crafted Excellence",
+      "body": "3 Wood Construction is a family-run company specializing in interior and exterior woodwork in Wilmington, Delaware. We transform spaces into stunning works of art with creativity and meticulous attention to detail.",
+      "linkText": "Learn More",
+      "linkHref": "#about"
+    },
+    "block2": {
+      "label": "EXCELLENCE",
+      "heading": "Built to Last",
+      "body": "From custom cabinetry to exquisite outdoor structures, our skilled artisans blend traditional techniques with innovative design — delivering quality that stands the test of time.",
+      "linkText": "Our Services",
+      "linkHref": "#services"
+    }
+  },
+  "about": {
+    "heading": "About 3 Wood Construction",
+    "body": "3 Wood Construction is a family-run company specializing in interior and exterior woodwork located in Wilmington, Delaware. We transform spaces into stunning works of art with creativity and meticulous attention to detail. Our skilled artisans blend traditional techniques with innovative design concepts — from custom cabinetry to exquisite outdoor structures. We collaborate closely with every client, listening to your vision and exceeding your expectations.",
+    "history": "Founded by brothers Victor and Jesus Luna, 3 Wood Construction started as a small local operation built on a commitment to quality and family values. Over the years we have grown into a trusted name in the Wilmington area, completing hundreds of projects with the same dedication and craftsmanship that defined us from day one. Every project — large or small — is treated with the same care and precision that our founders instilled in the company from the very beginning."
+  },
+  "phone": "(302) 530-1346",
+  "email": "3woodconstruction@gmail.com",
+  "address": "Wilmington, Delaware"
+}

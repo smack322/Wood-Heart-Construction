@@ -1,6 +1,14 @@
 [build]
+  command = "npm run build"
+  publish = "build"
   functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Netlify Identity — enables Git Gateway for Decap CMS admin
+[template.environment]
+  NETLIFY_IDENTITY = "true"
 
 [[plugins]]
 package = "@netlify/plugin-emails"
-

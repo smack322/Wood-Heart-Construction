@@ -1,154 +1,160 @@
-h2 {
-  background-image: url('../../images/stained_wood.jpg');
-  background-size: cover; /* You can adjust this based on your preference */
-  color: #6A994E; /* Choose a contrasting text color for readability */
-  padding: 15px; /* Add padding to give space around the text */
-}
-h3 {
-  color: #8B4513
-}
-svg {
-  color: #707070
+.section-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #8B4513;
+  margin-bottom: 10px;
 }
 
-body {
-  background-color: #F4E1C6; /* Light Brown */
+/* ── About Us ── */
+.about-section {
+  padding: 80px 40px;
+  background: #fff;
 }
 
-#plywood {
-  width: 400px;
-  height: 300px;
+.about-section__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
 }
 
-.about-me {
-    text-align: center;
-    padding: 20px;
+.about-section__text {
+  flex: 1;
+}
+
+.about-section__text h2 {
+  font-size: 2rem;
+  margin: 0 0 20px;
+}
+
+.about-section__text p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #555;
+}
+
+.about-section__image {
+  flex: 1;
+}
+
+.about-section__image img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+/* ── Team ── */
+.team-section {
+  padding: 80px 40px;
+  background: #f5f0e8;
+}
+
+.team-section__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team-section__container h2 {
+  font-size: 2rem;
+  margin: 0 0 48px;
+}
+
+.team-section__grid {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  overflow: hidden;
+  max-width: 420px;
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-card__photo {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.team-card__info {
+  padding: 24px 28px 32px;
+  text-align: left;
+}
+
+.team-card__info h3 {
+  margin: 0 0 4px;
+  font-size: 1.3rem;
+}
+
+.team-card__role {
+  color: #8B4513;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin: 0 0 14px;
+}
+
+.team-card__bio {
+  color: #555;
+  font-size: 0.94rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ── History ── */
+.history-section {
+  padding: 80px 40px;
+  background: #fff;
+}
+
+.history-section__container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.history-section__container h2 {
+  font-size: 2rem;
+  margin: 0 0 24px;
+}
+
+.history-section__container p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .about-section,
+  .team-section,
+  .history-section {
+    padding: 56px 24px;
   }
-  
-  .about-me__content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+
+  .about-section__container {
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .team-section__grid {
+    flex-direction: column;
     align-items: center;
-    margin-top: 20px;
-  }
-  
-  .about-me__image-container {
-    flex: 0 0 300px;
-    margin-right: 20px;
-  }
-  
-  .about-me__image {
-    width: 100%;
-    height: auto;
-  }
-  
-  .about-me__text {
-    flex: 1;
   }
 
-  #about-us {
-    background-color: #F0F0F0;
-    border: 2px solid #A9A9A9;
-    padding: 10px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  .team-card {
+    max-width: 100%;
   }
-
-  .image-container {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  .image-container img {
-    width: 30%;
-    height: auto;
-  }
-  
-  /* For small screens */
-  @media (max-width: 480px) {
-    .image-container {
-      flex-direction: column;
-      align-items: center;
-    }
-    .image-container img {
-      width: 100%;
-      margin-bottom: 20px; /* Add space between stacked images */
-    }
-    #basement {
-      width: auto;
-      height: 5vh;
-    }
-  }
-
-  .about-me__content {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next row on smaller screens */
-  }
-  
-  .about-me__text {
-    flex: 1; /* Allow the text to grow to fill available space */
-    padding: 20px; /* Add spacing around the text */
-  }
-  
-  .about-me__image-container {
-    flex: 1; /* Allow the image container to grow to fill available space */
-    display: flex;
-    flex-wrap: wrap; /* Allow images to wrap to the next row on smaller screens */
-    justify-content: space-evenly;
-  }
-  
-  /* Style each image within the container */
-  .about-me__image-container img {
-    max-width: 100%; /* Ensure images do not exceed their container width */
-    height: auto; /* Maintain aspect ratio */
-    margin: 10px; /* Add spacing between images */
-  }
-
-  #raptor {
-    width: 500px;
-  }
-  #jesus {
-    width: 450px;
-  }
-
-  #vic {
-    width: 450px;
-  }
-
-  .aboutMe-pics {
-    border-radius: 10px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
-    transition: opacity 0.3s ease-in-out;
-  }
-
-  .aboutMe-pics:hover {
-    opacity: 0.8;
-  }
-
-  .navbar__slogan {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.4em;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    background: linear-gradient(to bottom, #DEB887, #D2B48C); /* Lighter Cedar to Pine colors */
-    color: #8B4513; /* Darker wood color for text */
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 50%;
-  }
-
-  #basement {
-    width: auto;
-    height: 100vh;
-  }
-  
-  
-  
-  
-  
-  
-  
+}

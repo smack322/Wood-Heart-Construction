@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "title": "3 Wood Construction Completes Major Basement Renovation in Wilmington",
+      "date": "2026-05-15",
+      "excerpt": "Our latest project featured a complete basement transformation including a custom bar, dedicated home theater, and extensive custom woodwork throughout the space.",
+      "image": "/images/basement_bar1.jpg",
+      "link": "#"
+    },
+    {
+      "title": "New Deck Season: What to Expect from a Composite Deck Build",
+      "date": "2026-04-10",
+      "excerpt": "As spring arrives, homeowners are investing in outdoor living spaces. Learn what goes into a high-quality composite deck installation from design to final reveal.",
+      "image": "/images/deck1/after1.jpg",
+      "link": "#"
+    },
+    {
+      "title": "Kitchen Remodels: From Design Concept to Final Reveal",
+      "date": "2026-03-22",
+      "excerpt": "Our step-by-step approach to kitchen renovations ensures minimal disruption and maximum impact. See our latest kitchen transformation featuring marble countertops and custom cabinetry.",
+      "image": "/images/kitchen2/after.jpg",
+      "link": "#"
+    }
+  ]
+}

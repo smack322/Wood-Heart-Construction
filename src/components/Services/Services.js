@@ -1,63 +1,65 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './services.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faPenRuler, faPaintRoller, faCompassDrafting, faHammer, faClipboard, faScrewdriver  } from '@fortawesome/free-solid-svg-icons';
-// import {faFacebook} from '@fortawesome/free-brands-svg-icons';
+import _svcRaw from '../../content/services.json';
+const servicesData = _svcRaw.list;
 
 const Services = () => {
+  const [activeId, setActiveId] = useState(null);
 
-  const services = [
-    {
-      icon: faPaintRoller,
-      title: 'INTERIOR WOODWORK',
-      description: 'Installing and renovating interior woodwork elements, including trim work, crown molding, baseboards, wainscoting, and paneling to enhance the aesthetics and character of a space.',
-      image: require('../../images/kitchen1/after2.jpg'),
-    },
-    {
-      icon: faPenRuler,
-      title: 'CABINETRY AND MILLWORK',
-      description: 'Designing and building custom cabinetry and millwork for kitchens, bathrooms, closets, and other areas of the home or commercial spaces to elevate the aesthetic appeal.',
-      image: require('../../images/kitchen2/after.jpg'),
-    },
-    {
-      icon: faScrewdriver,
-      title: 'EXTERIOR WOODWORK',
-      description: 'Constructing and repairing exterior woodwork elements like decks, pergolas, fences, gates, siding, and architectural features that add beauty and functionality to outdoor areas.',
-      image: require('../../images/deck1/after3.jpg'),
-    },
-    {
-      icon: faCompassDrafting,
-      title: 'CUSTOM WOODWORKING PROJECTS',
-      description: 'Taking on unique and challenging woodworking projects, such as custom-built libraries, wine cellars, home theaters, bars, and other specialty pieces to transform ordinary spaces into extraordinary.',
-      image: require('../../images/custom/custom.jpg'),
-    },
-    {
-      icon: faClipboard,
-      title: 'WOODWORKING DESIGN AND CONSULTATION',
-      description: 'Offering design expertise and consulting services to assist clients in conceptualizing their woodworking projects, selecting suitable materials, and optimizing functionality and aesthetics.',
-      image: require('../../images/misc_decks/after2_job1.jpg'),
-    },
-    {
-      icon: faHammer,
-      title: 'RENOVATIONS AND REMODELING',
-      description: 'Providing comprehensive woodworking services for home renovations and remodeling projects, including structural modifications, flooring installations, staircase upgrades, and more.',
-      image: require('../../images/deck1/after1.jpg'),
-    }
-  ];
+  // Track which service row is in view for the sticky sub-nav highlight
+  useEffect(() => {
+    const handleScroll = () => {
+      for (const service of servicesData) {
+        const el = document.getElementById(service.id);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= 160 && rect.bottom > 160) {
+            setActiveId(service.id);
+            return;
+          }
+        }
+      }
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div id="services" className="services">
-      <h2 id="service-heading">OUR SERVICES</h2>
-      <div className="services__container">
-        {services.map((service, index) => (
-          <div className="service" key={index}>
-            <FontAwesomeIcon icon={service.icon} size="3x" alt={`${service.title} icon`} />
-            <h3 id="service-title">{service.title}</h3>
-            <p id="service-desc">{service.description}</p>
+    <section id="services" className="services">
+      {/* Sticky jump-link sub-nav */}
+      <div className="services__subnav">
+        <div className="services__subnav-inner">
+          {servicesData.map((s) => (
+            <a
+              key={s.id}
+              href={`#${s.id}`}
+              className={`services__subnav-link ${activeId === s.id ? 'active' : ''}`}
+            >
+              {s.title}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      {/* Alternating image/text rows */}
+      {servicesData.map((service, index) => (
+        <div
+          key={service.id}
+          id={service.id}
+          className={`service-row ${index % 2 === 0 ? 'service-row--img-left' : 'service-row--img-right'}`}
+        >
+          <div className="service-row__image">
             <img src={service.image} alt={service.title} />
           </div>
-        ))}
-      </div>
-    </div>
+          <div className="service-row__content">
+            <span className="service-row__number">0{index + 1}</span>
+            <h3 className="service-row__title">{service.title}</h3>
+            <p className="service-row__desc">{service.description}</p>
+            <a href="#contact" className="service-row__link">Get a Quote →</a>
+          </div>
+        </div>
+      ))}
+    </section>
   );
 };
 

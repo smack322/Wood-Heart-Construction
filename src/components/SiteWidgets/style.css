@@ -1,0 +1,79 @@
+/* ── Floating CTA ── */
+.floating-cta {
+  position: fixed;
+  bottom: 32px;
+  left: 32px;
+  background: #8B4513;
+  color: #fff;
+  padding: 13px 22px;
+  border-radius: 4px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(139,69,19,0.35);
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.3s, transform 0.3s, background 0.2s;
+  pointer-events: none;
+  z-index: 500;
+}
+
+.floating-cta.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.floating-cta:hover {
+  background: #6b3310;
+  color: #fff;
+}
+
+/* ── Scroll to top ── */
+.scroll-to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 44px;
+  height: 44px;
+  background: #2c2c2c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.3s, transform 0.3s, background 0.2s;
+  pointer-events: none;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.scroll-to-top:hover {
+  background: #8B4513;
+}
+
+@media (max-width: 480px) {
+  .floating-cta {
+    left: 16px;
+    bottom: 20px;
+    font-size: 0.8rem;
+    padding: 11px 16px;
+  }
+  .scroll-to-top {
+    right: 16px;
+    bottom: 20px;
+  }
+}

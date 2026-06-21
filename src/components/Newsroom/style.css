@@ -1,0 +1,148 @@
+.newsroom {
+  padding: 80px 40px;
+  background: #fff;
+}
+
+.newsroom__header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.newsroom__header h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: #3D2B1F;
+}
+
+/* ── Grid ── */
+.newsroom__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ── News card ── */
+.news-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  background: #fff;
+  border: 1px solid #ede5d8;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.news-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+}
+
+.news-card__image-wrap {
+  display: block;
+  overflow: hidden;
+  height: 210px;
+}
+
+.news-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.news-card:hover .news-card__image {
+  transform: scale(1.04);
+}
+
+.news-card__body {
+  padding: 24px 26px 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.news-card__date {
+  font-size: 0.76rem;
+  color: #999;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.news-card__title {
+  font-size: 1.05rem;
+  margin: 0 0 12px;
+  line-height: 1.35;
+}
+
+.news-card__title a {
+  color: #3D2B1F;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.news-card__title a:hover {
+  color: #8B4513;
+}
+
+.news-card__excerpt {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: #666;
+  margin: 0 0 20px;
+  flex: 1;
+}
+
+.news-card__read-more {
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: #8B4513;
+  text-decoration: none;
+  border-bottom: 1px solid #8B4513;
+  padding-bottom: 1px;
+  align-self: flex-start;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.news-card__read-more:hover {
+  color: #DEB887;
+  border-color: #DEB887;
+}
+
+/* ── See more ── */
+.newsroom__footer {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.newsroom__see-more {
+  display: inline-block;
+  padding: 12px 32px;
+  border: 2px solid #8B4513;
+  border-radius: 4px;
+  color: #8B4513;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.newsroom__see-more:hover {
+  background: #8B4513;
+  color: #fff;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .newsroom {
+    padding: 56px 20px;
+  }
+
+  .newsroom__grid {
+    grid-template-columns: 1fr;
+  }
+}

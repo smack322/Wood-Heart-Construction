@@ -1,0 +1,102 @@
+{
+  "list": [
+    {
+      "id": "kitchen-renovation",
+      "title": "Kitchen Renovation",
+      "category": "interior-residential",
+      "description": "Complete kitchen renovation featuring natural-looking wood floors, stainless steel appliances, and a sophisticated black countertop.",
+      "photos": [
+        "/images/kitchen1/before.jpg",
+        "/images/kitchen1/after1.jpg",
+        "/images/kitchen1/after2.jpg"
+      ]
+    },
+    {
+      "id": "kitchen-transformation",
+      "title": "Kitchen Transformation",
+      "category": "interior-residential",
+      "description": "Complete kitchen transformation featuring white marble countertops, gray cabinets, top-of-the-line appliances, and natural wood flooring.",
+      "photos": [
+        "/images/kitchen2/before1.jpg",
+        "/images/kitchen2/after.jpg"
+      ]
+    },
+    {
+      "id": "basement-renovation",
+      "title": "Basement Renovation",
+      "category": "interior-residential",
+      "description": "Full basement transformation including a custom bar area, dedicated movie room, and extensive woodwork throughout.",
+      "photos": [
+        "/images/basement_3.jpg",
+        "/images/basement_1.jpg",
+        "/images/basement_2.jpg",
+        "/images/basement_4.jpg",
+        "/images/basement_6.jpg",
+        "/images/basement_bar1.jpg",
+        "/images/basement_movie1.jpg",
+        "/images/basement_movie2.jpg",
+        "/images/basement_movie4.jpg"
+      ]
+    },
+    {
+      "id": "custom-project",
+      "title": "Custom Woodworking",
+      "category": "interior-residential",
+      "description": "Bespoke custom woodworking project showcasing the craftsmanship and creative vision that defines 3 Wood Construction.",
+      "photos": [
+        "/images/custom/custom.jpg",
+        "/images/custom/painting.jpg"
+      ]
+    },
+    {
+      "id": "deck-renovation",
+      "title": "Deck Renovation",
+      "category": "exterior-residential",
+      "description": "Full deck renovation with composite gray and white materials, black and white rail system, and durable long-lasting finish.",
+      "photos": [
+        "/images/deck1/before.jpg",
+        "/images/deck1/after1.jpg",
+        "/images/deck1/after2.jpg",
+        "/images/deck1/after3.jpg",
+        "/images/deck1/after4.jpg"
+      ]
+    },
+    {
+      "id": "deck-rebuild",
+      "title": "Deck Rebuild",
+      "category": "exterior-residential",
+      "description": "Complete deck rebuild replacing faded, worn materials with gray composite wood for a modern, durable outdoor space.",
+      "photos": [
+        "/images/deck2/before.jpg",
+        "/images/deck2/after.jpg"
+      ]
+    },
+    {
+      "id": "misc-deck-work",
+      "title": "Deck & Outdoor Work",
+      "category": "exterior-residential",
+      "description": "A collection of outdoor deck and landscaping projects showcasing our exterior woodwork capabilities.",
+      "photos": [
+        "/images/misc_decks/after_job1.jpg",
+        "/images/misc_decks/after2_job1.jpg",
+        "/images/misc_decks/after3_job1.jpg",
+        "/images/misc_decks/after_job2.jpg"
+      ]
+    },
+    {
+      "id": "shed-build",
+      "title": "Custom Shed Build",
+      "category": "exterior-residential",
+      "description": "Custom shed construction built to spec with quality materials and expert craftsmanship from foundation to roof.",
+      "photos": [
+        "/images/shed_6.jpg",
+        "/images/shed_9.jpg",
+        "/images/shed_7.jpg",
+        "/images/shed_8.jpg",
+        "/images/shed_1.jpg",
+        "/images/shed_4.jpg",
+        "/images/shed_2.jpg"
+      ]
+    }
+  ]
+}

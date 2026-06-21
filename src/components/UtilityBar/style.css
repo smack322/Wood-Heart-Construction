@@ -1,0 +1,39 @@
+.utility-bar {
+  background-color: #1a1a1a;
+  color: #aaa;
+  padding: 7px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  letter-spacing: 0.4px;
+}
+
+.utility-bar__links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.utility-bar__link {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.utility-bar__link:hover {
+  color: #DEB887;
+}
+
+.utility-bar__sep {
+  color: #555;
+}
+
+@media (max-width: 480px) {
+  .utility-bar {
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+    padding: 6px 16px;
+  }
+}

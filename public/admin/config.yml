@@ -1,0 +1,115 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  # ── Company / About ──────────────────────────────────────────────
+  - name: about
+    label: "About & Company"
+    files:
+      - label: "Company Info"
+        name: about
+        file: "src/content/about.json"
+        format: json
+        fields:
+          - label: "Hero Block 1"
+            name: "hero"
+            widget: object
+            fields:
+              - label: "Block 1"
+                name: block1
+                widget: object
+                fields:
+                  - {label: "Label (e.g. WHO WE ARE)", name: label, widget: string}
+                  - {label: "Heading", name: heading, widget: string}
+                  - {label: "Body", name: body, widget: text}
+                  - {label: "Link Text", name: linkText, widget: string}
+                  - {label: "Link URL", name: linkHref, widget: string}
+              - label: "Block 2"
+                name: block2
+                widget: object
+                fields:
+                  - {label: "Label (e.g. EXCELLENCE)", name: label, widget: string}
+                  - {label: "Heading", name: heading, widget: string}
+                  - {label: "Body", name: body, widget: text}
+                  - {label: "Link Text", name: linkText, widget: string}
+                  - {label: "Link URL", name: linkHref, widget: string}
+          - label: "About Section"
+            name: about
+            widget: object
+            fields:
+              - {label: "Heading", name: heading, widget: string}
+              - {label: "Body", name: body, widget: text}
+              - {label: "History", name: history, widget: text}
+          - {label: "Phone", name: phone, widget: string}
+          - {label: "Email", name: email, widget: string}
+          - {label: "Address", name: address, widget: string}
+
+  # ── Services ─────────────────────────────────────────────────────
+  - name: services
+    label: Services
+    files:
+      - label: "Services List"
+        name: services
+        file: "src/content/services.json"
+        format: json
+        fields:
+          - label: Services
+            name: list
+            widget: list
+            fields:
+              - {label: "ID (no spaces, use hyphens)", name: id, widget: string}
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: text}
+              - {label: Image, name: image, widget: image}
+
+  # ── Newsroom ─────────────────────────────────────────────────────
+  - name: newsroom
+    label: Newsroom
+    files:
+      - label: "News Posts"
+        name: newsroom
+        file: "src/content/newsroom.json"
+        format: json
+        fields:
+          - label: Posts
+            name: posts
+            widget: list
+            fields:
+              - {label: Headline, name: title, widget: string}
+              - {label: Date, name: date, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false}
+              - {label: Excerpt, name: excerpt, widget: text}
+              - {label: "Thumbnail Image", name: image, widget: image}
+              - {label: "Link URL", name: link, widget: string, default: "#"}
+
+  # ── Projects ─────────────────────────────────────────────────────
+  - name: projects
+    label: Projects
+    files:
+      - label: "Projects List"
+        name: projects
+        file: "src/content/projects.json"
+        format: json
+        fields:
+          - label: Projects
+            name: list
+            widget: list
+            fields:
+              - {label: "ID (no spaces, use hyphens)", name: id, widget: string}
+              - {label: Title, name: title, widget: string}
+              - label: Category
+                name: category
+                widget: select
+                options:
+                  - {label: "Interior Residential", value: interior-residential}
+                  - {label: "Exterior Residential", value: exterior-residential}
+                  - {label: "Interior Commercial", value: interior-commercial}
+                  - {label: "Exterior Commercial", value: exterior-commercial}
+              - {label: Description, name: description, widget: text}
+              - label: Photos
+                name: photos
+                widget: list
+                field: {label: Photo, name: photo, widget: image}
