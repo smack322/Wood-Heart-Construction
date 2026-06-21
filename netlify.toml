@@ -10,5 +10,3 @@
 [template.environment]
   NETLIFY_IDENTITY = "true"
 
-[[plugins]]
-package = "@netlify/plugin-emails"

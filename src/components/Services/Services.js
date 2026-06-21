@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './services.css';
 import _svcRaw from '../../content/services.json';
 const servicesData = _svcRaw.list;
@@ -55,7 +56,7 @@ const Services = () => {
             <span className="service-row__number">0{index + 1}</span>
             <h3 className="service-row__title">{service.title}</h3>
             <p className="service-row__desc">{service.description}</p>
-            <a href="#contact" className="service-row__link">Get a Quote →</a>
+            <Link to="/contact" className="service-row__link">Get a Quote →</Link>
           </div>
         </div>
       ))}
